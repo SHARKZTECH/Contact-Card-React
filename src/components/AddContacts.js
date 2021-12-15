@@ -20,7 +20,7 @@ class AddContacts extends React.Component{
   render(){
   return (
     <div className="ui main container">
-       <Link to="/" 
+       <Link to="/Contact-Card-React/" 
      className="ui green button">VIEW CONTACTS</Link> 
       <h1>Add Contact</h1>
       <form className="ui form" onSubmit={this.add}>

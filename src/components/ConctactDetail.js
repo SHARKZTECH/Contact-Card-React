@@ -15,7 +15,7 @@ const ConctactDetail = (props) => {
                     <div className="description">{email}</div>
                 </div>
                 </div> 
-                <Link to="/" >
+                <Link to="/Contact-Card-React/" >
                 <button className='ui button blue center' style={{marginLeft:"35%"}}>BACK TO CONTACT LIST</button>  
                 </Link>        
         </div>

@@ -12,6 +12,7 @@ const mystyle = {
   backgroundColor: "#287",
   padding: "10px",
   textAlign:"center",
-  marginBottom: "1.2rem"
+  marginBottom: "1.2rem",
+  marginTop:"0.2rem"
 };
 export default Header;

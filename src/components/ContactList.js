@@ -17,10 +17,10 @@ function ContactList(props) {
   })
   return (
     <div className="main">
-     <Link to="/add" 
+     <Link to="/Contact-Card-React/add" 
      className="ui blue button">ADD CONTACT</Link>       
    <div className="ui celled list">
-   {renderContactList}
+   {renderContactList ? renderContactList : "No contacts" }
     </div>
     </div>
   );

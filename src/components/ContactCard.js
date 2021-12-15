@@ -8,7 +8,7 @@ function ContactCard(props) {
       <div className="item" style={{display:"flex",position:"relative",padding:"1rem",fontSize:"1.4rem"}} >
          <img className="ui avatar image" src={user} alt="user" />
         <div className="content" >
-          <Link to={`/contact/${id}`}
+          <Link to={`/Contact-Card-React/contact/${id}`}
           state={{contact:props.contact}}
               >
           <div className="header">{name}</div>

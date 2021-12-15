@@ -36,9 +36,9 @@ useEffect(()=>{
       <Router>
       <Header/>
     <Routes>
-    <Route path="/" exact element={<ContactList contacts={contacts} getContactId={removeContactHadler}/> } />
-    <Route path="/add" element={<AddContacts addContactsHandler={addContactsHandler} />} />
-    <Route path="/contact/:id" element={<ConctactDetail/>}/>
+    <Route path="/Contact-Card-React/" exact element={<ContactList contacts={contacts} getContactId={removeContactHadler}/> } />
+    <Route path="/Contact-Card-React/add" element={<AddContacts addContactsHandler={addContactsHandler} />} />
+    <Route path="/Contact-Card-React/contact/:id" element={<ConctactDetail/>}/>
     </Routes>
      {/* <AddContacts addContactsHandler={addContactsHandler} />
     <ContactList contacts={contacts} getContactId={removeContactHadler}/> */}
