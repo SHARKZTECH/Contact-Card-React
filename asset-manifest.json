@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Contact-Card-React/static/css/main.e37292e3.chunk.css",
+    "main.js": "/Contact-Card-React/static/js/main.ba3e70a8.chunk.js",
+    "main.js.map": "/Contact-Card-React/static/js/main.ba3e70a8.chunk.js.map",
+    "runtime-main.js": "/Contact-Card-React/static/js/runtime-main.f9b8223c.js",
+    "runtime-main.js.map": "/Contact-Card-React/static/js/runtime-main.f9b8223c.js.map",
+    "static/js/2.0d9909ff.chunk.js": "/Contact-Card-React/static/js/2.0d9909ff.chunk.js",
+    "static/js/2.0d9909ff.chunk.js.map": "/Contact-Card-React/static/js/2.0d9909ff.chunk.js.map",
+    "index.html": "/Contact-Card-React/index.html",
+    "static/css/main.e37292e3.chunk.css.map": "/Contact-Card-React/static/css/main.e37292e3.chunk.css.map",
+    "static/js/2.0d9909ff.chunk.js.LICENSE.txt": "/Contact-Card-React/static/js/2.0d9909ff.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f9b8223c.js",
+    "static/js/2.0d9909ff.chunk.js",
+    "static/css/main.e37292e3.chunk.css",
+    "static/js/main.ba3e70a8.chunk.js"
+  ]
+}
