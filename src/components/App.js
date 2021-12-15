@@ -32,9 +32,10 @@ useEffect(()=>{
 },[contacts]);
 
   return (
+    <Router>
+    <Header/>
     <div className="ui container">
-      <Router>
-      <Header/>
+    
     <Routes>
     <Route path="/Contact-Card-React/" exact element={<ContactList contacts={contacts} getContactId={removeContactHadler}/> } />
     <Route path="/Contact-Card-React/add" element={<AddContacts addContactsHandler={addContactsHandler} />} />
@@ -43,9 +44,10 @@ useEffect(()=>{
      {/* <AddContacts addContactsHandler={addContactsHandler} />
     <ContactList contacts={contacts} getContactId={removeContactHadler}/> */}
 
-    </Router>
+  
         
     </div>
+    </Router>
   );
 }
 
