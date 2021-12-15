@@ -1,13 +1,17 @@
-import React from "react"
+import React from "react";
 
-function Header() {
+const Header = () => {
   return (
-    <div className="ui  menu">
-      <div className="ui container">
-        <h1>SHARKZ TECH</h1>
-      </div>        
+    <div  style={mystyle}>     
+        <h2>Contact Manager</h2>     
     </div>
   );
-}
-
+};
+const mystyle = {
+  color: "#fff",
+  backgroundColor: "#287",
+  padding: "10px",
+  textAlign:"center",
+  marginBottom: "1.2rem"
+};
 export default Header;

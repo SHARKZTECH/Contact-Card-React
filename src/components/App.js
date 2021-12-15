@@ -1,9 +1,11 @@
 import React,{useState,useEffect} from "react"
 import './App.css';
+import {BrowserRouter as Router,Route,Routes} from "react-router-dom"
 
 import Header from "./Header"
 import AddContacts from "./AddContacts"
 import ContactList from "./ContactList"
+import ConctactDetail from "./ConctactDetail";
 
 import {uuid} from "uuidv4";
 
@@ -31,12 +33,17 @@ useEffect(()=>{
 
   return (
     <div className="ui container">
+      <Router>
       <Header/>
-    
-     <AddContacts addContactsHandler={addContactsHandler} />
-    <ContactList contacts={contacts} getContactId={removeContactHadler}/>
+    <Routes>
+    <Route path="/" exact element={<ContactList contacts={contacts} getContactId={removeContactHadler}/> } />
+    <Route path="/add" element={<AddContacts addContactsHandler={addContactsHandler} />} />
+    <Route path="/contact/:id" element={<ConctactDetail/>}/>
+    </Routes>
+     {/* <AddContacts addContactsHandler={addContactsHandler} />
+    <ContactList contacts={contacts} getContactId={removeContactHadler}/> */}
 
-    
+    </Router>
         
     </div>
   );

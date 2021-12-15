@@ -1,19 +1,30 @@
-import React from "react"
+import React from "react";
+import {Link} from "react-router-dom";
+import user from "../images/user.png";
 
-
-function ContactCard({contact,clickHandler}) {
+function ContactCard(props) {
+    const {id ,name ,email }=props.contact;
   return (
-    <div className="ui celled list">
-        <div className="ui segment" >
-        <div className="content">
-          <div className="header">{contact.name}</div>
-          <div>{contact.email}</div>
-          <i style={{color:"red" ,float:"right"}} class="trash alternate outline icon"
-          onClick={()=>clickHandler(contact.id)}
-          ></i>
+      <div className="item" style={{display:"flex",position:"relative",padding:"1rem",fontSize:"1.4rem"}} >
+         <img className="ui avatar image" src={user} alt="user" />
+        <div className="content" >
+          <Link to={`/contact/${id}`}
+          state={{contact:props.contact}}
+              >
+          <div className="header">{name}</div>
+          <div>{email}</div>
+          </Link>
           </div>
+          <i style={{color:"blue",position:"absolute",right:"4rem"}} 
+          className="edit alternate outline icon"
+          onClick={()=>props.clickHandler(id)}
+          ></i>
+
+          <i style={{color:"red",position:"absolute",right:"1rem"}} 
+          className="trash alternate outline icon"
+          onClick={()=>props.clickHandler(id)}
+          ></i>
       </div>
-  </div>
   );
 }
 
